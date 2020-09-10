@@ -1,0 +1,40 @@
+@import "base/font";
+@import "base/var";
+@import "base/global";
+@import "base/util";
+
+/////////////////////////////////////////// block
+@import "block/section";
+@import "block/container";
+@import "block/title/title";
+@import "block/button/btn";
+@import "block/link/link";
+@import "block/list/list";
+@import "block/header/header";
+@import "block/logo";
+@import "block/breadcrumbs";
+@import "block/form/form";
+@import "block/form/form-group";
+@import "block/form/form-label";
+@import "block/form/form-control";
+@import "block/table/table";
+
+@import "block/footer/footer";
+@import "block/up";
+
+/////////////////////////////////////////// modal block
+@import "block/modal/modal";
+
+// ///////////////////////////////////////// display
+@import "base/display";
+
+/////////////////////////////////////////// anchor for smarty debug
+.anchor {
+	color: red;
+
+	background-color: yellow;
+
+	&._hidden {
+		display: none;
+	}
+}

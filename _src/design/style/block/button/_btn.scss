@@ -1,0 +1,42 @@
+.btn {
+	display: inline-block;
+	text-align: center;
+	user-select: none;
+	vertical-align: middle;	
+	border: none;
+	background-color: transparent;
+
+	/////////////////////////////////////////// type
+	&_primary {
+		background-color: #1273eb;
+		transition: .3s;
+		color: #fff;
+
+		&:hover {
+			background-color: #0161cd;
+			color: #fff;
+		}
+	}
+
+
+	////////////////////////////////// in text
+	&_in-text {
+		line-height: 1.3;
+	}
+
+	//////////////////////////////////////////// size
+	// height
+	&_lg {
+		padding: 15px 20px;
+	}
+
+
+	// width
+	&_w_lg {
+		width: 212px;
+	}
+
+	&_w_full {
+		width: 100%;
+	}
+}
