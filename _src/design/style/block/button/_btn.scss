@@ -1,39 +1,44 @@
 .btn {
 	display: inline-block;
+	padding: 0;
+
+	vertical-align: middle;
 	text-align: center;
-	user-select: none;
-	vertical-align: middle;	
-	border: none;
+
 	background-color: transparent;
+	border: none;
+
+	transition: .3s;
+
+	user-select: none;
 
 	/////////////////////////////////////////// type
 	&_primary {
-		background-color: #1273eb;
-		transition: .3s;
 		color: #fff;
 
+		background-color: #1273eb;
+
 		&:hover {
-			background-color: #0161cd;
 			color: #fff;
+
+			background-color: #0161cd;
 		}
 	}
 
-
-	////////////////////////////////// in text
-	&_in-text {
-		line-height: 1.3;
-	}
-
 	//////////////////////////////////////////// size
-	// height
 	&_lg {
 		padding: 15px 20px;
+
+		font-size: 18px;
 	}
 
-
-	// width
+	//////////////////////////////////////////// width
 	&_w_lg {
-		width: 212px;
+		width: 200px;
+	}
+
+	&_w_sm {
+		width: 100px;
 	}
 
 	&_w_full {

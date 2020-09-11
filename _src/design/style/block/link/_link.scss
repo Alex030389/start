@@ -1,20 +1,9 @@
 .link {
 	color: blue;
+
 	border-bottom: 1px solid grey;
 
 	&:hover {
 		color: black;
-	}
-}
-
-.icon {
-
-	&_small {
-		width: 10px;
-		height: 10px;
-	}
-
-	&_white {
-		fill: #fff;
 	}
 }
