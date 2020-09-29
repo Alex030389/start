@@ -52,7 +52,7 @@ const path = {
 };
 
 ///////////////////////////////////////////////////////// server
-function server() {
+const server = () => {
 	browserSync({
 		server: 'dist',
 		notify: true,
@@ -63,12 +63,12 @@ function server() {
 }
 
 ///////////////////////////////////////////////////////// clean global
-function clean() {
+const clean = () => {
 	return del(path.dist.html);
 }
 
 ///////////////////////////////////////////////////////// html
-function html() {
+const html = () => {
 	return src(path.src.html)
 		.pipe(fileinclude({
 			prefix: '@@',
@@ -79,20 +79,20 @@ function html() {
 }
 
 ///////////////////////////////////////////////////////// fonts
-function font() {
+const font = () => {
 	return src(path.src.font)
 		.pipe(dest(path.dist.font));
 }
 
 ///////////////////////////////////////////////////////// img
-function img() {
+const img = () => {
 	return src(path.src.img, { since: lastRun(img) })
 		.pipe(dest(path.dist.img))
 		.pipe(browserSync.stream());
 }
 
 ///////////////////////////////////////////////////////// sprite
-function sprite() {
+const sprite = () => {
 	return src(path.src.sprite)
 	// minify svg
 	.pipe(svgmin({
@@ -126,7 +126,7 @@ function sprite() {
 }
 
 ///////////////////////////////////////////////////////// css
-function cssLib() {
+const cssLib = () => {
 	return src(path.src.styleLib)
 	.pipe(sass())
 	.pipe(cleancss())
@@ -137,7 +137,7 @@ function cssLib() {
 	.pipe(browserSync.stream());
 }
 
-function css() {
+const css = () => {
 	return src(path.src.style, { sourcemaps: true })
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(gcmq())
@@ -147,7 +147,7 @@ function css() {
 	.pipe(browserSync.stream());
 }
 
-function cssBuild() {
+const cssBuild = () => {
 	return src(path.src.style)
 	.pipe(sass())
 	.pipe(gcmq())
@@ -158,12 +158,12 @@ function cssBuild() {
 }
 
 ///////////////////////////////////////////////////////// js
-function jsJquery() {
+const jsJquery = () => {
 	return src(path.src.scriptJquery)
 	.pipe(dest(path.dist.script));
 }
 
-function jsLib() {
+const jsLib = () => {
 	return src(path.src.scriptLib)
 	.pipe(fileinclude({
 		basepath: '@root'
@@ -174,7 +174,7 @@ function jsLib() {
 	.pipe(browserSync.stream());
 }
 
-function js() {
+const js = () => {
 	return src(path.src.script, { sourcemaps: true })
 	.pipe(fileinclude())
 	.pipe(babel({ presets: ['@babel/preset-env'] }))
@@ -183,7 +183,7 @@ function js() {
 	.pipe(browserSync.stream());
 }
 	
-function jsBuild() {
+const jsBuild = () => {
 	return src(path.src.script)
 	.pipe(fileinclude())
 	.pipe(babel({ presets: ['@babel/env'] }))
@@ -193,7 +193,7 @@ function jsBuild() {
 }
 
 ///////////////////////////////////////////////////////// watcher
-function watcher() {
+const watcher = () => {
 	watch(path.src.htmlWatch, html);
 	watch(path.src.font, font);
 	watch(path.src.img, img);
