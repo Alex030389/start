@@ -3,7 +3,7 @@
 @import "base/global";
 @import "base/util";
 
-/////////////////////////////////////////// block
+// ///////////////////////////////////////// block
 @import "block/section";
 @import "block/container";
 @import "block/title/title";
@@ -22,19 +22,19 @@
 @import "block/footer/footer";
 @import "block/up";
 
-/////////////////////////////////////////// modal block
+// ///////////////////////////////////////// modal block
 @import "block/modal/modal";
 
 // ///////////////////////////////////////// display
 @import "base/display";
 
-/////////////////////////////////////////// anchor for smarty debug
+// ///////////////////////////////////////// anchor for smarty debug
 .anchor {
-	color: red;
+  color: red;
 
-	background-color: yellow;
+  background-color: yellow;
 
-	&._hidden {
-		display: none;
-	}
+  &._hidden {
+    display: none;
+  }
 }

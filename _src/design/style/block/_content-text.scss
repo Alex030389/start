@@ -1,22 +1,22 @@
 .content-text {
-	h1 {
-	}
+  h1 {
+  }
 
-	h2 {
-	}
+  h2 {
+  }
 
-	p {
-	}
+  p {
+  }
 
-	a {
-		@extend .link;
-	}
+  a {
+    @extend .link;
+  }
 
-	ul {
-		@extend .list;
+  ul {
+    @extend .list;
 
-		li {
-			@extend .list__item;
-		}
-	}
+    li {
+      @extend .list__item;
+    }
+  }
 }
