@@ -1,16 +1,19 @@
 .btn {
-  display: inline-block;
-  padding: 0;
+  @extend .btn-reset;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
   vertical-align: middle;
-  text-align: center;
-
-  background-color: transparent;
-  border: none;
 
   transition: .3s;
 
   user-select: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 
   // ///////////////////////////////////////// type
   &_primary {
@@ -27,18 +30,15 @@
 
   // ////////////////////////////////////////// size
   &_lg {
-    padding: 15px 20px;
+    min-height: 48px;
+    padding: 8px 20px;
 
     font-size: 18px;
   }
 
   // ////////////////////////////////////////// width
-  &_w_lg {
-    width: 200px;
-  }
-
-  &_w_sm {
-    width: 100px;
+  &_mw_lg {
+    min-width: 200px;
   }
 
   &_w_full {

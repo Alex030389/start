@@ -1,0 +1,15 @@
+.link {
+  color: blue;
+
+  background-image: linear-gradient(to right, $c-main 0, $c-main 100%);
+  background-repeat: repeat-x;
+  background-position: left 1.15em;
+  background-size: 1px 1px;
+
+  transition: .2s;
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+}

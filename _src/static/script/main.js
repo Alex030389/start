@@ -21,6 +21,7 @@ $('[data-js="selectric"]').selectric()
 @@include('block/__copy-discount.js');
 @@include('block/__accordion.js');
 @@include('block/__modal.js');
+@@include('block/__scroll-to.js');
 @@include('block/__up.js');
 
 

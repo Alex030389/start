@@ -19,10 +19,10 @@ const { series, parallel, src, dest, lastRun, watch } = require('gulp'),
 const path = {
   dist: {
     html: 'dist/',
-    font: 'dist/design/font/',
-    img: 'dist/design/img/',
-    style: 'dist/design/css/',
-    script: 'dist/design/js/',
+    font: 'dist/static/font/',
+    img: 'dist/static/img/',
+    style: 'dist/static/css/',
+    script: 'dist/static/js/',
   },
 
   src: {
@@ -31,23 +31,23 @@ const path = {
     ],
     htmlWatch: '_src/html/**/*.html',
     font: [
-      '_src/design/font/**/*'
+      '_src/static/font/**/*'
     ],
     img: [
-      '_src/design/img/**/*.{png,jpg,jpeg,gif,svg}',
-      '!_src/design/img/sprite/**'
+      '_src/static/img/**/*.{png,jpg,jpeg,gif,svg}',
+      '!_src/static/img/sprite/**'
     ],
-    sprite: '_src/design/img/sprite/*.svg',
-    styleLib: '_src/design/style/libs.scss',
-    style: '_src/design/style/main.scss',
+    sprite: '_src/static/img/sprite/*.svg',
+    styleLib: '_src/static/style/libs.scss',
+    style: '_src/static/style/main.scss',
     styleWatch: [
-      '_src/design/style/**/*',
-      '!_src/design/style/libs.scss'
+      '_src/static/style/**/*',
+      '!_src/static/style/libs.scss'
     ],
-    scriptJquery: '_src/design/script/lib/jquery-3.5.1.min.js',
-    scriptLib: '_src/design/script/libs.js',
-    script: '_src/design/script/main.js',
-    scriptWatch: ['_src/design/script/**/*', '!_src/design/script/libs.js']
+    scriptJquery: '_src/static/script/lib/jquery-3.5.1.min.js',
+    scriptLib: '_src/static/script/libs.js',
+    script: '_src/static/script/main.js',
+    scriptWatch: ['_src/static/script/**/*', '!_src/static/script/libs.js']
   },
 };
 
