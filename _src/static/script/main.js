@@ -15,6 +15,7 @@ svg4everybody();
 $('[data-js="selectric"]').selectric()
 
 // ///////////////////////////////////// block
+@@include('block/__buttons-blur.js');
 @@include('block/__hamburger.js');
 @@include('block/__tab.js');
 @@include('block/__slider.js');
