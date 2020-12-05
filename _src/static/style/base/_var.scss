@@ -22,11 +22,11 @@ $ss: 359.98px;
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -15px -30px !important;
+  margin: 0 -15px !important;
 }
 
 .col {
-  margin: 0 15px 30px;
+  margin: 0 15px;
 }
 
 $gap: 30px;
