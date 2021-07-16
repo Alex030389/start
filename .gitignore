@@ -4,6 +4,5 @@
 /.idea/
 /debug.log
 /**/_backstage
-/**/package-lock.json
 /**/Thumbs.db
 /**/*.DS_Store

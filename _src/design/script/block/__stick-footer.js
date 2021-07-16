@@ -1,5 +1,6 @@
-// ///////////////////////////////////////////////////// stick footer
-(function () {
+(() => {
+  // ///////////////////////////////////////// stick footer
+
   let isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 
   let stickFooter = function () {

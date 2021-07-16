@@ -33,6 +33,6 @@
     "object-fit-images": "^3.2.4",
     "selectric": "^1.13.0",
     "svg4everybody": "^2.1.9",
-    "swiper": "^6.7.0"
+    "swiper": "4.5.1"
   }
 }
