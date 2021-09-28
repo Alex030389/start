@@ -6,16 +6,12 @@ $fz-main: 16px;
 $lh-main: 1.6;
 
 // //////////////////////////////////////// colors
-$c-main: #000;
+$c-main: black;
 $c-secondary: gray;
-$c-accent: orange;
-
-// //////////////////////////////////////// percent in pixel
-$w-cs: 100% / 1580px; //width content + sidebar
-$w-c: 100% / 1180px; // width content
+$c-accent: red;
 
 // //////////////////////////////////////// breakpoints
-$sl: 1439.98px;;
+$sl: 1429.98px;
 $xl: 1199.98px;
 $lg: 991.98px;
 $md: 767.98px;

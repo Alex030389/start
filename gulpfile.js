@@ -40,14 +40,11 @@ const path = {
     sprite: '_src/design/images/sprite/*.svg',
     styleLib: '_src/design/style/libs.scss',
     style: '_src/design/style/main.scss',
-    styleWatch: [
-      '_src/design/style/**/*',
-      '!_src/design/style/libs.scss'
-    ],
+    styleWatch: ['_src/design/style/**/*', '!_src/design/style/libs.scss'],
     scriptJquery: '_src/design/script/lib/jquery-3.5.1.min.js',
     scriptLib: '_src/design/script/libs.js',
     script: '_src/design/script/main.js',
-    scriptWatch: ['_src/design/script/**/*', '!_src/design/script/libs.js']
+    scriptWatch: ['_src/design/script/**/*', '!_src/design/script/lib/libs.js']
   },
 };
 
@@ -200,8 +197,8 @@ const watcher = () => {
   watch(path.src.sprite, sprite);
   watch(path.src.styleLib, cssLib);
   watch(path.src.styleWatch, css);
-  watch(path.src.scriptWatch, js);
   watch(path.src.scriptLib, jsLib);
+  watch(path.src.scriptWatch, js);
 }
 
 ///////////////////////////////////////////////////////// task

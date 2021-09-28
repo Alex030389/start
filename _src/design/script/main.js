@@ -1,29 +1,30 @@
 'use strict';
 
+// polifill
+@@include('./block/__polyfill.js')
+
+//========================================================
+//////////////////////////////////////// plugin initialize
+//========================================================
 svg4everybody();
 
-// ///////////////////////////////////// polifill
 // objectFitImages();
-@@include('block/__polifill.js')
 
-// ///////////////////////////////////// plagin inicialize
 // lazyLoad
 // const lazyLoadInstance = new LazyLoad({
 // 	elements_selector: ".lazy"
 // });
 
 // selectric
-// $('[data-js="selectric"]').selectric()
+// $('[data-selectric]').selectric();
 
-// ///////////////////////////////////// block
-@@include('block/__buttons-blur.js')
-@@include('block/__checkboxes.js')
-// @@include('block/__menu.js')
-// @@include('block/__tab.js')
-// @@include('block/__slider.js')
-// @@include('block/__copy-discount.js')
-// @@include('block/__accordion.js')
-// @@include('block/__modal.js')
-@@include('block/__scroll-to.js')
-@@include('block/__up.js')
-@@include('block/__stick-footer.js')
+@@include('./block/__menu.js')
+@@include('./block/__slider.js')
+@@include('./block/__tab.js')
+@@include('./block/__accordion.js')
+@@include('./block/__copy-code-discount.js')
+@@include('./block/__checkboxes.js')
+@@include('./block/__btn-blur.js')
+@@include('./block/__scroll-to-anchor.js')
+@@include('./block/__scroll-to-top.js')
+@@include('./block/__stick-footer.js')

@@ -1,36 +1,38 @@
-// (() => {
-  // ///////////////////////////////////////// menu
+//////////////////////////////////////////// menu
+(() => {
 
-//   const btnHamburger = document.querySelector('[data-js="btn-hamburger"]');
-//   const mNav = document.querySelector('[data-js="m-nav"]');
-//   const mNavBox = document.querySelector('[data-js="m-nav-box"]');
-//   const body = document.querySelector('body');
-//   const btnCloseNav = document.querySelector('[data-js="m-nav-btn-close"]');
+  if (document.querySelector('[data-btn-open-menu]')) {
+    const btnOpenMenu = document.querySelector('[data-btn-open-menu]');
+    const mNav = document.querySelector('[data-m-nav]');
+    const mNavBox = document.querySelector('[data-m-nav-box]');
+    const body = document.querySelector('body');
+    const btnCloseNav = document.querySelector('[data-btn-close-menu]');
 
-//   const openMNav = () => {
-//     body.classList.add('fixed');
-//     mNav.classList.add('m-nav--active');
-//     mNavBox.classList.add('m-nav__box--active');
-//   };
+    const openMNav = () => {
+      body.classList.add('fixed');
+      mNav.classList.add('_active');
+      mNavBox.classList.add('_active');
+    };
 
-//   const closeMNav = () => {
-//     body.classList.remove('fixed');
-//     mNav.classList.remove('m-nav--active');
-//     mNavBox.classList.remove('m-nav__box--active');
-//   };
+    const closeMNav = () => {
+      body.classList.remove('fixed');
+      mNav.classList.remove('_active');
+      mNavBox.classList.remove('_active');
+    };
 
-//   if(btnHamburger) {
-//     btnHamburger.addEventListener('click', () => {
-//       openMNav();
-//     });
+    btnOpenMenu.addEventListener('click', () => {
+      openMNav();
+    });
 
-//     mNav.addEventListener('click', (evt) => {
-//       if(evt.target === mNav) { closeMNav() };
-//     });
+    mNav.addEventListener('click', (evt) => {
+      if (evt.target === mNav) {
+        closeMNav()
+      }
+    });
 
-//     btnCloseNav.addEventListener('click', () => {
-//       closeMNav();
-//     });
-//   };
+    btnCloseNav.addEventListener('click', () => {
+      closeMNav();
+    });
+  }
 
-// })();
+})();

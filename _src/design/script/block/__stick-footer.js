@@ -1,9 +1,9 @@
+/////////////////////////////////////////// stick footer
 (() => {
-  // ///////////////////////////////////////// stick footer
 
   let isIE11 = !!window.MSInputMethodContext && !!document.documentMode;
 
-  let stickFooter = function () {
+  let stickFooter = () => {
     let FOOTER = document.querySelector('footer');
     let MAIN = document.querySelector('main');
     let BODY = document.querySelector('body');
@@ -19,5 +19,6 @@
   if (isIE11) {
     stickFooter();
     window.addEventListener('resize', stickFooter);
-  };
+  }
+
 })();

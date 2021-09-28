@@ -9,6 +9,10 @@ body {
   font-family: $ff-main;
   color: $c-main;
   // overflow-x: hidden;
+
+  &._fixed {
+    overflow-y: hidden;
+  }
 }
 
 .main {
@@ -25,9 +29,9 @@ svg {
   display: block;
 }
 
-button:active {
-  outline: none;
-}
+//button:active {
+//  outline: none;
+//}
 
 // form style
 ::-webkit-input-placeholder {
@@ -78,12 +82,12 @@ button:active {
   opacity: 0;
 }
 
-// remove button clear ie
+// remove btn clear ie
 ::-ms-clear {
   display: none;
 }
 
-// remove button show password ie
+// remove btn show password ie
 ::-ms-reveal {
   display: none;
 }
@@ -105,13 +109,6 @@ button:active {
 
   -webkit-text-fill-color: currentColor;
 }
-
-// input:focus,
-// button:focus,
-// textarea:focus,
-// select:focus {
-//   outline: none;
-// }
 
 // :disabled,
 // .disabled {

@@ -1,9 +1,9 @@
+/////////////////////////////////////////// checkboxes
 (() => {
-  // ///////////////////////////////////////// checkboxes
 
-  const checkboxes = document.querySelectorAll('[data-js="checkbox-label"]');
+  if (document.querySelector('[data-checkbox-label]')) {
+    const checkboxes = document.querySelectorAll('[data-checkbox-label]');
 
-  if(checkboxes.length > 0) {
     checkboxes.forEach((checkbox) => {
       checkbox.addEventListener('click', (evt) => {
         setTimeout(() => {
